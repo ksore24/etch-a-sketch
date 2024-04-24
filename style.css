@@ -7,17 +7,13 @@ html, body{
     display: flex;
     flex-direction: column;
     height: 100%;
-    
 }
 
 .squareRow{
     display: flex;
-    align-items: stretch;
     flex: 1;
-    
 }
 
 .square{
-    border: solid black 1px;
     flex: 1;
 }

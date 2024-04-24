@@ -9,6 +9,12 @@ for(a = 0; a < 16; a++)
     {
         const square = document.createElement("div");
         square.className = "square";
+
+        square.onmouseover = function()
+        {
+            square.style.backgroundColor = "red";
+        };
+        
         squareRow.appendChild(square);
     }
     container.appendChild(squareRow);
