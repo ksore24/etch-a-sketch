@@ -3,10 +3,20 @@ html, body{
     height: 100%;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+}
+
 .container{
     display: flex;
     flex-direction: column;
     height: 100%;
+}
+
+button{
+    align-self: center;
+    font-size: 12px;
 }
 
 .squareRow{
