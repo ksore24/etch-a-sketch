@@ -30,7 +30,12 @@ function createGrid(gridSize)
 
             square.onmouseover = function()
             {
-                square.style.backgroundColor = "red";
+                if(square.style.backgroundColor == "")
+                {
+                    square.style.backgroundColor = "rgb("+((Math.floor(Math.random() * 255)) + 1) + ", " + ((Math.floor(Math.random() * 255)) + 1) + ", " + ((Math.floor(Math.random() * 255)) + 1) + ")";
+                    square.style.opacity = 0.1;
+                }
+                square.style.opacity = +square.style.opacity + 0.1;
             };
             
             squareRow.appendChild(square);
